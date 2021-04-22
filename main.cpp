@@ -569,32 +569,32 @@ using namespace std;
 // }
 
 //Counting Roads - https://atcoder.jp/contests/abc061/tasks/abc061_b
-int main() {
-    int N, M;
-    cin >> N >> M;
+// int main() {
+//     int N, M;
+//     cin >> N >> M;
 
-    int NMAX = 50;              //最大値
-    int A[NMAX], B[NMAX];       //A,Bの道路数
-    for (int i=0; i<M; i++) {
-        cout << i+1 << "つ目の道路の数：" << endl;
-        cin >> A[i] >> B[i];
-    }
+//     int NMAX = 50;              //最大値
+//     int A[NMAX], B[NMAX];       //A,Bの道路数
+//     for (int i=0; i<M; i++) {
+//         cout << i+1 << "つ目の道路の数：" << endl;
+//         cin >> A[i] >> B[i];
+//     }
     
-    int road[NMAX];             //道の数初期化
-    for (int i=0; i<N; i++) {
-        road[i] = 0;
-    }
+//     int road[NMAX];             //道の数初期化
+//     for (int i=0; i<N; i++) {
+//         road[i] = 0;
+//     }
 
-    for (int i=0; i<M; i++) {   //道の数-計算
-        road[A[i] - 1] += 1;
-        road[B[i] - 1] += 1;
-    }
+//     for (int i=0; i<M; i++) {   //道の数-計算
+//         road[A[i] - 1] += 1;
+//         road[B[i] - 1] += 1;
+//     }
 
-    for (int i=0; i<N; ++i) {
-        cout << "伸びている道路の本数：" << road[i] << endl;
-    }
-    return 0;
-}
+//     for (int i=0; i<N; ++i) {
+//         cout << "伸びている道路の本数：" << road[i] << endl;
+//     }
+//     return 0;
+// }
 
 
 
