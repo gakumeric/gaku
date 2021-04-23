@@ -596,6 +596,29 @@ using namespace std;
 //     return 0;
 // }
 
+//Trained? - https://atcoder.jp/contests/abc065/tasks/abc065_b
+int N;
+int main() {
+    cout << "Nの入力：" << endl;
+    cin >> N;
+    vector<int> V;
+    for (int i=0; i<N; i++) {
+        int z;
+        cin >> z;
+        V.push_back(z);
+    }
+    int count =0;
+    for (int j=0; j<N; j++) {
+        if (V[j] != 2) {
+            count++;
+        } else {
+            break;
+        }
+    }
+    cout << "結果は、" << count << endl;
+}
+
+
 
 
 
